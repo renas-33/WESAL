@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>وصال | تواصل بلا حواجز</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">وصال <span>WESAL</span></div>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#services">خدماتنا</a>
+            <a href="#about">عن وصال</a>
+        </nav>
+
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+
+
+            <h1>تواصل بلا حواجز،<br>وعالم يفهم الجميع</h1>
+
+            <p class="description">
+                وصال مساعد ذكي يوظف الذكاء الاصطناعي
+                لتسهيل التواصل بين الصم وبقية أفراد المجتمع.
+            </p>
+
+            <a href="#services" class="main-button">
+                ابدأ رحلتك مع وصال
+            </a>
+
+        </section>
+
+        <section id="services" class="services">
+
+            <h2>كيف يمكن لوصال مساعدتك؟</h2>
+
+            <p>اختر الخدمة التي تريد استخدامها</p>
+
+            <div class="service-container">
+
+    <div class="service-card">
+        <h3>🤟 ترجمة لغة الإشارة</h3>
+        <p>حوّل الإشارات إلى نص وصوت.</p>
+        <button onclick="openService('sign')">
+            ابدأ الترجمة
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>🎙️ تحويل الكلام إلى نص</h3>
+        <p>اقرأ كلام الآخرين مباشرة.</p>
+        <button onclick="openService('speech')">
+            ابدأ الاستماع
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>📚 أكاديمية وصال</h3>
+        <p>تعلم الإشارات السعودية بالفيديو.</p>
+        <button onclick="openService('academy')">
+            ابدأ التعلم
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>🤖 مساعد وصال</h3>
+        <p>مساعد تفاعلي للإجابة عن أسئلتك.</p>
+        <button onclick="openService('assistant')">
+            ابدأ المحادثة
+        </button>
+    </div>
+
+    <div class="service-card">
+        <h3>🧳 حقيبة السفر والطوارئ</h3>
+        <p>عبارات جاهزة للمواقف المهمة.</p>
+        <button onclick="openTravelBag()">
+    افتح الحقيبة
+</button>
+    </div>
+
+</div>
+
+        <!-- نافذة ترجمة لغة الإشارة -->
+
+        <section id="sign-section" style="display:none; padding:20px;">
+
+            <h2>🤟 ترجمة لغة الإشارة - وصال</h2>
+
+            <p>ابدأ باستخدام الكاميرا لترجمة الإشارات.</p>
+
+            <iframe
+                id="sli-frame"
+                src="http://localhost:5173/"
+                title="محرك ترجمة لغة الإشارة SLI"
+                allow="camera; microphone"
+                style="
+                    width:100%;
+                    height:700px;
+                    border:0;
+                    border-radius:12px;
+                    background:white;
+                ">
+            </iframe>
+
+            <button onclick="closeSignService()">
+                العودة إلى الخدمات
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>وصال WESAL ©️ 2026</p>
+        <p>معًا نصنع عالمًا بلا حواجز</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
