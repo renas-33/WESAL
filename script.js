@@ -428,7 +428,7 @@ function openService(service) {
             <p>استخدمي الكاميرا لبدء ترجمة الإشارات.</p>
 
             <iframe
-                src="/sli-engine/"
+             src="/WESAL/sli-engine/"
                 title="محرك SLI"
                 allow="camera; microphone"
                 style="
